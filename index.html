@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Prayer Timing | Jordan </title>
+
+    <!-- for font awesome icons -->
+    <link rel="stylesheet" href="css/all.css">
+
+    <!-- matching with different browsers -->
+    <link rel="stylesheet" href="css/normalize.css">
+
+    <!-- main css style -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- icon logo-->
+    <link rel="icon" href="imgs/Mosque.png">
+
+    <!-- axios connect library-->
+    <script src="../node_modules/axios/dist/axios.min.js"></script>
+
+</head>
+<body>
+
+    <div class="parent">
+        
+        <!-- information about city name and current time -->
+        <div class="city-info">
+
+            <!-- name -->
+            <div class="name-time">
+                <h2> <span id="city-name" > amman </span> <span> <i class="fa-solid fa-location-dot"></i> </span> </h2>
+                <p>  <span id="day-name" > friday </span> : <span id="current-day" > 12/07/2024  </span>   <span> <i class="fa-solid fa-calendar-days"></i> </span> </p>
+            </div>
+
+            <hr>
+
+            <!-- cards -->
+
+            <div class="card-section">
+
+                <div class="card">
+                    
+                    <div class="card-name">
+                        <h2> <span> <i class="fa-solid fa-sun"></i>  </span> duhar </h2>
+                    </div>
+                
+                    <div class="card-body">
+                        <p> <span id="duhar-id">  4:30 </span> <span> <i class="fa-solid fa-clock"></i> </span> </p>
+                    </div>
+                
+                </div>
+
+                <div class="card">
+                    
+                    <div class="card-name">
+                        <h2> <span> <i class="fa-solid fa-cloud-sun"></i> asr </span>  </h2>
+                    </div>
+                
+                    <div class="card-body">
+                        <p> <span id="asr-id">  4:30 </span> <span> <i class="fa-solid fa-clock"></i> </span> </p>
+                    </div>
+                
+                </div>
+
+                <div class="card">
+                    
+                    <div class="card-name">
+                        <h2> <span> <i class="fa-solid fa-moon"></i> maghrib </span>  </h2>
+                    </div>
+                
+                    <div class="card-body">
+                        <p> <span id="maghrib-id">  4:30 </span> <span> <i class="fa-solid fa-clock"></i> </span> </p>
+                    </div>
+                
+                </div>
+
+                <div class="card">
+                    
+                    <div class="card-name">
+                        <h2> <span> <i class="fa-solid fa-cloud-moon"></i> Isha </span>  </h2>
+                    </div>
+                
+                    <div class="card-body">
+                        <p> <span id="Isha-id">  4:30 </span> <span> <i class="fa-solid fa-clock"></i> </span> </p>
+                    </div>
+                
+                </div>
+            
+                <div class="card">
+                    
+                    <div class="card-name">
+                        <h2> <span> <i class="fa-solid fa-sun"></i> fajr </span>  </h2>
+                    </div>
+                
+                    <div class="card-body">
+                        <p> <span id="fajr-id">  4:30 </span> <span> <i class="fa-solid fa-clock"></i> </span> </p>
+                    </div>
+                
+                </div>
+            </div>
+
+            <!-- change city  select -->
+             <div class="exist-cities center-element">
+                <label for="cities-options">select here your city:</label>
+                <select id="cities-options"></select>
+             </div>
+        </div>
+
+    </div>
+
+
+    <script src="allProcess.js"></script>
+</body>
+</html>

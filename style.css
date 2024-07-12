@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+    background: linear-gradient(45deg,#210358,#09001B);
+    min-height: 100vh;
+}
+
+.center-element {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.parent {
+    width: 100%;
+}
+.city-info .name-time {
+    width: fit-content;
+    background-color: gray;
+    padding: 40px;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    margin: 30px auto;
+    color: white;
+    text-align: center;
+    text-transform: capitalize;
+    transition: all 0.4s ease ;
+    -webkit-transition: all 0.4s ease ;
+    -moz-transition: all 0.4s ease ;
+    -ms-transition: all 0.4s ease ;
+    -o-transition: all 0.4s ease ;
+}
+
+.city-info .name-time:hover ,
+.card:hover {
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+
+    border: 2px solid  white ;
+    background-color:#b6b5b5 ;
+}
+
+.city-info hr {
+    margin: 0 50px;
+    margin-top: 20px;
+    border-color: white;
+}
+
+.card-section {
+    margin: 20px;
+    padding: 20px;
+
+    display: grid;
+    grid-template-columns: repeat( 2 , minmax(100px,1fr));
+    gap: 20px;
+}
+
+.card {
+    text-align: center;
+    background-color: #b6b5b5;
+    padding: 10px;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    color: white;
+    transition: all 0.4s ease ;
+    -webkit-transition: all 0.4s ease ;
+    -moz-transition: all 0.4s ease ;
+    -ms-transition: all 0.4s ease ;
+    -o-transition: all 0.4s ease ;
+}
+.card .card-name {
+    font-size: 17px;
+    text-transform: capitalize;
+    margin-bottom: 5px;
+    padding: 5px;
+    border-bottom:1px solid black;
+    font-weight: 500;
+}
+
+.card .card-body {
+    font-size: 25px;
+    padding: 10px;
+}
+
+i {
+    font-size: 20px;
+}
+.card .card-name i {
+    font-size: 23px;
+}
+
+.exist-cities select {
+    cursor: pointer;
+    background:white;
+    padding: 7px;
+    
+    margin: 50px auto;
+
+    outline: none;
+    text-transform: capitalize;
+    border: 1px solid white;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.card:nth-child(5) {
+    grid-column: span 2;
+}
+
+.exist-cities {
+    flex-direction: column;
+}
+.exist-cities label {
+    color: white;
+    text-transform: capitalize;
+}
